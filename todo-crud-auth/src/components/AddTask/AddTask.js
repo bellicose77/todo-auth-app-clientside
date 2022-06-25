@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 const AddTask = () => {
-    const [tasks,setTasks] = useState({tittle:'',description:'',date:''})
+    const [tasks,setTasks] = useState({tittle:'',description:'',date:''});
+
+    const handleUserInput = e =>{
+
+    }
 
     const handelSubmit = e =>{
         e.preventDefault();
-        console.log("Handle submit");
+        
+        console.log(tasks)
        
     }
     return (
