@@ -5,6 +5,8 @@ const AddTask = () => {
     const [tasks,setTasks] = useState({title:'',description:'',date:''});
 
     const handleUserInput = e =>{
+        const nameValue = e.target.name;
+        console.log(nameValue);
 
     }
 
