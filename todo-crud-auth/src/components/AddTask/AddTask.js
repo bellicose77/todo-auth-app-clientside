@@ -6,7 +6,9 @@ const AddTask = () => {
 
     const handleUserInput = e =>{
         const nameValue = e.target.name;
-        console.log(nameValue);
+        const fieldValue = e.target.value;
+        setTasks({...tasks,[nameValue]:fieldValue})
+        // console.log(nameValue);
 
     }
 
