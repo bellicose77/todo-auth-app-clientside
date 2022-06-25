@@ -2,11 +2,14 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 const AddTask = () => {
+    const handelSubmit = e =>{
+        e.preventDafult();
+    }
     return (
         <div>
             <h2>Add Task</h2>
 
-    <Form>
+    <Form onSubmit={handelSubmit} >
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Title</Form.Label>
     <Form.Control className="mb-3" type="text"  />
@@ -19,7 +22,7 @@ const AddTask = () => {
     <Form.Label>Created Date</Form.Label>
     <Form.Control type="date" />
     </Form.Group>
-  <Button variant="primary" type="submit">
+   <Button variant="primary" type="submit">
     Submit
   </Button>
 </Form>
