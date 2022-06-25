@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Nabigation from './components/Nabigation/Nabigation';
 
@@ -8,6 +8,9 @@ function App() {
     <div className="App">
       <Router>
       <Nabigation/>
+      <Routes>
+        
+      </Routes>
       </Router>
      
     </div>
