@@ -18,7 +18,7 @@ const Nabigation = () => {
            
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Login</Nav.Link>
+            <Nav.Link as ={Link} to="/login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
