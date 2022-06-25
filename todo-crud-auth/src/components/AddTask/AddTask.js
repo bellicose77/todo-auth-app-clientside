@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 const AddTask = () => {
-    const [tasks,setTasks] = useState({tittle:'',description:'',date:''});
+    const [tasks,setTasks] = useState({title:'',description:'',date:''});
 
     const handleUserInput = e =>{
 
