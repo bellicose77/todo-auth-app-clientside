@@ -16,15 +16,15 @@ const AddTask = () => {
     <Form onSubmit={handelSubmit}>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Title</Form.Label>
-    <Form.Control className="mb-3" type="text"  />
+    <Form.Control name="title" className="mb-3" type="text"  />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Description</Form.Label>
-    <Form.Control type="text" />
+    <Form.Control name="Description" type="text" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Created Date</Form.Label>
-    <Form.Control type="date" />
+    <Form.Control name="date" type="date" />
     </Form.Group>
    <Button variant="primary" type="submit">
     Submit
