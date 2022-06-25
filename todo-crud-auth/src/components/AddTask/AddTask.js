@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 
 const AddTask = () => {
     const handelSubmit = e =>{
+        console.log("Handle submit");
         e.preventDafult();
     }
     return (
