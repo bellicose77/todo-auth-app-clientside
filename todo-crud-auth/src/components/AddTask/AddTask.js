@@ -14,7 +14,11 @@ const AddTask = () => {
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Description</Form.Label>
     <Form.Control type="text" />
-     </Form.Group>
+    </Form.Group>
+    <Form.Group className="mb-3" controlId="formBasicPassword">
+    <Form.Label>Created Date</Form.Label>
+    <Form.Control type="date" />
+    </Form.Group>
   <Button variant="primary" type="submit">
     Submit
   </Button>
