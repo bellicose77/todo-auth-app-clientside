@@ -29,7 +29,7 @@ const AddTask = () => {
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Description</Form.Label>
-    <Form.Control onChange={handleUserInput}  name="Description" type="text" />
+    <Form.Control onChange={handleUserInput}  name="description" type="text" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Created Date</Form.Label>
