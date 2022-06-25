@@ -10,7 +10,7 @@ import UserLogin from './components/UserLogin/UserLogin';
 function App() {
   return (
     <div className="App">
-      <Router>
+     
       <Nabigation/>
       <Routes>
         <Route path="/home" element={<Home/>}/>
@@ -18,7 +18,7 @@ function App() {
         <Route path="/show" element={<ShowTask/>}/>
         <Route path="/login" element={<UserLogin/>}/>
       </Routes>
-      </Router>
+     
      
     </div>
   );
