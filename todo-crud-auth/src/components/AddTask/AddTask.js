@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 const AddTask = () => {
+    const [tasks,setTasks] = useState({tittle:'',description:'',date:''})
 
     const handelSubmit = e =>{
         e.preventDefault();
