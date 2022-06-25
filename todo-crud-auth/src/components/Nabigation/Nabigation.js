@@ -15,6 +15,7 @@ const Nabigation = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as ={Link}  to="/tasks">ADD TASK</Nav.Link>
+            <Nav.Link as ={Link}  to="/show">TASKS</Nav.Link>
            
           </Nav>
           <Nav>
