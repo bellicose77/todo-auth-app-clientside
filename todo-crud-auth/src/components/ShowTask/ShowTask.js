@@ -1,13 +1,10 @@
 import React from 'react';
+import { Table } from 'react-bootstrap';
 
 const ShowTask = () => {
     return (
         <div>
             <h2>Show Task</h2>
-            import Table from 'react-bootstrap/Table';
-
-function DarkExample() {
-  return (
     <Table striped bordered hover variant="dark">
       <thead>
         <tr>
@@ -37,11 +34,7 @@ function DarkExample() {
         </tr>
       </tbody>
     </Table>
-  );
-}
-
-export default DarkExample;
-        </div>
+   </div>
     );
 };
 
