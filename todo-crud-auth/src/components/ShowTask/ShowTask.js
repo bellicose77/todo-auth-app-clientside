@@ -5,6 +5,8 @@ const ShowTask = () => {
     const [todolists,setTodolists] = useState([]);
     useEffect(()=>{
         fetch('http://localhost:5000/tasks')
+        .then(res=>res.json())
+        .then(data=>console.log(data))
     },[])
     return (
         <div>
