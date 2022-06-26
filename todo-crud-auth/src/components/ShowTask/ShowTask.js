@@ -20,17 +20,11 @@ const ShowTask = () => {
           <th>Description</th>
           <th>Created</th>
         </tr>
-      </thead>
       <tbody>
         {
             todolists.map(todolist => <SingleTask key={todolist._id} todolist={todolist}></SingleTask>)
         }
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
+       
         
       </tbody>
     </Table>

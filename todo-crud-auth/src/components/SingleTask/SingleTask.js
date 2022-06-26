@@ -1,9 +1,14 @@
 import React from 'react';
 
-const SingleTask = () => {
+const SingleTask = ({todolist}) => {
     return (
         <div>
-            
+            <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr> 
         </div>
     );
 };
