@@ -9,6 +9,9 @@ const SingleTask = ({todolist}) => {
           <td>{todolist.title}</td>
           <td>{todolist.description}</td>
           <td>{todolist.date}</td>
+          <td><button>X</button>
+          <button>Update</button>
+          </td>
         </tr> 
       </>
     );
