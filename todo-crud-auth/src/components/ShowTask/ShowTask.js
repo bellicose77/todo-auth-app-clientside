@@ -5,13 +5,13 @@ const ShowTask = () => {
     return (
         <div>
             <h2>Show Task</h2>
-    <Table striped bordered hover variant="dark">
+    <Table striped bordered hover >
       <thead>
         <tr>
           <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Created</th>
         </tr>
       </thead>
       <tbody>
