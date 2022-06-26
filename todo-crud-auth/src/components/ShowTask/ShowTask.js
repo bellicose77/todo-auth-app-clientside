@@ -6,7 +6,7 @@ const ShowTask = () => {
     useEffect(()=>{
         fetch('http://localhost:5000/tasks')
         .then(res=>res.json())
-        .then(data=>console.log(data))
+        .then(data=>setTodolists(data))
     },[])
     return (
         <div>
