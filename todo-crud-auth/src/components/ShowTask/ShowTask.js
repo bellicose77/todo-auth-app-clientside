@@ -19,6 +19,7 @@ const ShowTask = () => {
           <th>Title</th>
           <th>Description</th>
           <th>Created</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
