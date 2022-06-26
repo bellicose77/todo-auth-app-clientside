@@ -15,7 +15,7 @@ const AddTask = () => {
     const handelSubmit = e =>{
         e.preventDefault();
         
-        console.log(tasks)
+        // console.log(tasks)
        
     }
     return (
