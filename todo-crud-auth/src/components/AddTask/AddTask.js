@@ -7,13 +7,16 @@ const AddTask = () => {
     const handleUserInput = e =>{
         const nameValue = e.target.name;
         const fieldValue = e.target.value;
-        setTasks({...tasks,[nameValue]:fieldValue})
+        setTasks({...tasks,[nameValue]:fieldValue});
         // console.log(nameValue);
 
     }
 
     const handelSubmit = e =>{
         e.preventDefault();
+        const data = {
+
+        }
         
         fetch('http://localhost:5000/tasks',{
             method:'POST',
@@ -21,7 +24,7 @@ const AddTask = () => {
             headers:{
              'Content-Type' :'application/json'
             },
-            
+
 
         })
         //console.log(tasks)
