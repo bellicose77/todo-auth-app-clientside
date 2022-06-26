@@ -17,7 +17,12 @@ const AddTask = () => {
         
         fetch('http://localhost:5000/tasks',{
             method:'POST',
+
+            headers:{
+             'Content-Type' :'application/json'
+            },
             
+
         })
         //console.log(tasks)
        
