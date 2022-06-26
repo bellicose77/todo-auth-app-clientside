@@ -15,7 +15,9 @@ const AddTask = () => {
     const handelSubmit = e =>{
         e.preventDefault();
         const data = {
-
+          title:tasks.title,
+          description:tasks.description,
+          date:tasks.date
         }
         
         fetch('http://localhost:5000/tasks',{
