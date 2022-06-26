@@ -15,7 +15,11 @@ const AddTask = () => {
     const handelSubmit = e =>{
         e.preventDefault();
         
-        // console.log(tasks)
+        fetch('http://localhost:5000/tasks',{
+            method:'POST',
+            
+        })
+        //console.log(tasks)
        
     }
     return (
