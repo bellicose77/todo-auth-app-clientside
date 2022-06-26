@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 
 const ShowTask = () => {
     const [todolists,setTodolists] = useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:5000/tasks')
+    },[])
     return (
         <div>
             <h2>Show Task</h2>
