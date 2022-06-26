@@ -1,15 +1,16 @@
 import React from 'react';
 
 const SingleTask = ({todolist}) => {
+    //console.log(todolist);
     return (
-        <div>
+        <>
             <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <td></td>
+          <td>{todolist.title}</td>
+          <td>{todolist.description}</td>
+          <td>{todolist.date}</td>
         </tr> 
-        </div>
+      </>
     );
 };
 
