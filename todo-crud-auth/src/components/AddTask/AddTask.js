@@ -36,7 +36,7 @@ const AddTask = () => {
         .then(res=>res.json())
         .then(data=>console.log(data))
 
-        navigate('/.show');
+        navigate('../show');
         //console.log(tasks)
        
     }
