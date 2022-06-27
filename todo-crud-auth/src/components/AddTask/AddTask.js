@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import {useNavigate} from 'react-router-dom';
 
 const AddTask = () => {
     const [tasks,setTasks] = useState({title:'',description:'',date:''});
+
+    const navigate = useNavigate()
 
     const handleUserInput = e =>{
         const nameValue = e.target.name;
@@ -32,6 +35,8 @@ const AddTask = () => {
         })
         .then(res=>res.json())
         .then(data=>console.log(data))
+
+        navigate('/show');
         //console.log(tasks)
        
     }
