@@ -11,6 +11,9 @@ const ShowTask = () => {
     },[])
     const handleDelete = id =>{
       console.log(id);
+      fetch(`http://localhost:5000/tasks/${id}`)
+      .then(res=>res.json())
+      
     }
     return (
         <div>
