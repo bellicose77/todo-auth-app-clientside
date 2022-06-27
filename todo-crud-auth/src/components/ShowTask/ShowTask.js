@@ -9,6 +9,9 @@ const ShowTask = () => {
         .then(res=>res.json())
         .then(data=>setTodolists(data))
     },[])
+    const handleDelete = id =>{
+      
+    }
     return (
         <div>
             <h2>Show Task</h2>
