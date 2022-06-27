@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleTask = ({todolist}) => {
+const SingleTask = ({todolist,handleDelete}) => {
     //console.log(todolist);
     return (
         <>
@@ -9,7 +9,7 @@ const SingleTask = ({todolist}) => {
           <td>{todolist.title}</td>
           <td>{todolist.description}</td>
           <td>{todolist.date}</td>
-          <td><button>X</button>
+          <td><button onClick={} >X</button>
           <button>Update</button>
           </td>
         </tr> 
