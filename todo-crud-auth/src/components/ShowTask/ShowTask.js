@@ -10,7 +10,7 @@ const ShowTask = () => {
         .then(data=>setTodolists(data))
     },[])
     const handleDelete = id =>{
-      
+      console.log(id);
     }
     return (
         <div>
@@ -27,7 +27,7 @@ const ShowTask = () => {
       </thead>
       <tbody>
         {
-            todolists.map(todolist => <SingleTask key={todolist._id} todolist={todolist}></SingleTask>)
+            todolists.map(todolist => <SingleTask key={todolist._id} todolist={todolist} handleDelete={handleDelete}></SingleTask>)
         }
        
         
