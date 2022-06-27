@@ -9,7 +9,7 @@ const SingleTask = ({todolist,handleDelete}) => {
           <td>{todolist.title}</td>
           <td>{todolist.description}</td>
           <td>{todolist.date}</td>
-          <td><button onClick={} >X</button>
+          <td><button onClick={()=>handleDelete(todolist._id)} >X</button>
           <button>Update</button>
           </td>
         </tr> 
