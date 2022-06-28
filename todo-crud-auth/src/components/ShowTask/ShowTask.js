@@ -22,8 +22,8 @@ const ShowTask = () => {
       .then(data=>{
         if(data.deletedCount){
           const remainingTodo = todolists.filter(todo=>todo._id !==todo.id)
-           set
-          console.log(data)
+           setTodolists(remainingTodo);
+          //console.log(data)
         }
       })
       
