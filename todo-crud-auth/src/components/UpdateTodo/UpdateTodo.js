@@ -16,15 +16,15 @@ const UpdateTodo = () => {
     <Form>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Title</Form.Label>
-    <Form.Control name="title" className="mb-3" type="text"  />
+    <Form.Control name="title" value={singleTodo.title} className="mb-3" type="text"  />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Description</Form.Label>
-    <Form.Control name="description" type="text" />
+    <Form.Control name="description" value={singleTodo.description} type="text" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Created Date</Form.Label>
-    <Form.Control name="date" type="date" />
+    <Form.Control name="date" value={singleTodo.date} type="date" />
     </Form.Group>
    <Button variant="primary" type="submit">
     Submit
