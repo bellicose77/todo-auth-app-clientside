@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
 const UpdateTodo = () => {
     const {id} = useParams();
+    useEffect(()=>{
+        
+    },[])
     return (
         <div>
             <h2>Update your todo:{id}</h2>
