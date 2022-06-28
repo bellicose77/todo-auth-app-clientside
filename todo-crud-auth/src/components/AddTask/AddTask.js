@@ -34,12 +34,7 @@ const AddTask = () => {
 
         })
         .then(res=>res.json())
-        .then(data=> {
-            if(data.deletedCounted>0){
-                alert("Deleted successfully")
-            }
-        }
-            )
+        .then(data=>console.log(data))
 
         navigate('../show');
         //console.log(tasks)
