@@ -21,6 +21,7 @@ const ShowTask = () => {
       .then(res=>res.json())
       .then(data=>{
         if(data.deletedCount){
+          const remainingTodo = 
           alert("deleted done");
           console.log(data)
         }
