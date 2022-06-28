@@ -11,8 +11,11 @@ const ShowTask = () => {
     },[])
     const handleDelete = id =>{
       console.log(id);
-      fetch(`http://localhost:5000/tasks/${id}`{
+      fetch(`http://localhost:5000/tasks/${id}`,{
         method: 'DELETE',
+        headers:{
+          "content-type":"application/json"
+        }
        
       })
       .then(res=>res.json())
