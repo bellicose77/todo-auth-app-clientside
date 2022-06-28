@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 const UpdateTodo = () => {
     const {id} = useParams();
     useEffect(()=>{
-        
+        fetch(`http://localhost:5000/tasks/${id}`)
     },[])
     return (
         <div>
