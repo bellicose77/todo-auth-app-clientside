@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleTask = ({todolist,handleDelete}) => {
     //console.log(todolist);
@@ -10,7 +11,8 @@ const SingleTask = ({todolist,handleDelete}) => {
           <td>{todolist.description}</td>
           <td>{todolist.date}</td>
           <td><button onClick={()=>handleDelete(todolist._id)} >X</button>
-          <button>Update</button>
+          <Link to={`/update/${todolist._id}`}><button>Update</button></Link>
+          
           </td>
         </tr> 
       </>
