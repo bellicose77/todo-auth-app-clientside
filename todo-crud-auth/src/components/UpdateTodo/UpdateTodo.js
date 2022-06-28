@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
 const UpdateTodo = () => {
+    const[singleTodo,setSigleTodo] = useState({})
     const {id} = useParams();
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
-    },[])
+        .then(res=>res.json())
+        .then(data=>setSigleTodo(data))
+    },[]);
     return (
         <div>
             <h2>Update your todo:{id}</h2>
