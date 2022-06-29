@@ -9,7 +9,7 @@ const UpdateTodo = () => {
         const updateTitle = e.target.value;
         console.log(updateTitle);
     }
-    const handleUpdateTitle = e =>{
+    const handleUpdateDesc = e =>{
         const updateDesc = e.target.value;
     }
     const handleUpdateDate = e =>{
