@@ -3,11 +3,12 @@ import { Button, Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
 const UpdateTodo = () => {
-    const[singleTodo,setSigleTodo] = useState({})
+    const[singleTodo,setSigleTodo] = useState({title:'',description:'',date:''})
     const {id} = useParams();
     const handleUpdateTitle = e =>{
         const updateTitle = e.target.value;
-        console.log(updateTitle);
+        const updateTitleData = {...setSigleTodo}
+        //console.log(updateTitle);
     }
     const handleUpdateDesc = e =>{
         const updateDesc = e.target.value;
