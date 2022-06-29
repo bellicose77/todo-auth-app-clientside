@@ -16,11 +16,11 @@ const UpdateTodo = () => {
     <Form>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Title</Form.Label>
-    <Form.Control name="title" value={singleTodo.title} className="mb-3" type="text"  />
+    <Form.Control name="title" value={singleTodo.title} onChange={handleUpadateName} className="mb-3" type="text"  />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Description</Form.Label>
-    <Form.Control name="description" value={singleTodo.description} type="text" />
+    <Form.Control name="description" value={singleTodo.description} onChange={handleUpadateName}  type="text" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Created Date</Form.Label>
