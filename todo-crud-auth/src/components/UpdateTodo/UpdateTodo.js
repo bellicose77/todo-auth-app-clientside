@@ -26,15 +26,15 @@ const UpdateTodo = () => {
     <Form>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Title</Form.Label>
-    <Form.Control name="title" value={singleTodo.title} onChange={handleUpadateTitle} className="mb-3" type="text"  />
+    <Form.Control name="title" value={singleTodo.title} onChange={handleUpdateTitle} className="mb-3" type="text"  />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Description</Form.Label>
-    <Form.Control name="description" value={singleTodo.description} onChange={handleUpadateDesc}  type="text" />
+    <Form.Control name="description" value={singleTodo.description} onChange={handleUpdateDesc}  type="text" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Created Date</Form.Label>
-    <Form.Control name="date" value={singleTodo.date} onChange={handleUpadateDate}  type="date" />
+    <Form.Control name="date" value={singleTodo.date} onChange={handleUpdateTitle}  type="date" />
     </Form.Group>
    <Button variant="primary" type="submit">
     Submit
