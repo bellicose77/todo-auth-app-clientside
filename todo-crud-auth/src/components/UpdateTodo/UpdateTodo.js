@@ -9,6 +9,9 @@ const UpdateTodo = () => {
         const updateTitle = e.target.value;
         console.log(updateTitle);
     }
+    const handleUpadateDesc = e =>{
+        
+    }
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
         .then(res=>res.json())
