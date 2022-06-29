@@ -11,6 +11,9 @@ const UpdateTodo = () => {
     }
     const handleUpdateDesc = e =>{
         const updateDesc = e.target.value;
+    };
+    const handleUpdateSubmit = e =>{
+        e.preventDefault();
     }
     const handleUpdateDate = e =>{
         const updateDate = e.target.value;
