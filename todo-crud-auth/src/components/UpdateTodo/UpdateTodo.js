@@ -7,7 +7,8 @@ const UpdateTodo = () => {
     const {id} = useParams();
     const handleUpdateTitle = e =>{
         const updateTitle = e.target.value;
-        const updateTitleData = {...setSigleTodo}
+        const updateValueData = {...setSigleTodo}
+        updateValueData
         //console.log(updateTitle);
     }
     const handleUpdateDesc = e =>{
