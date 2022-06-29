@@ -21,13 +21,17 @@ const UpdateTodo = () => {
         const updateDesc = e.target.value;
         const updateValueData = {...singleTodo}
         updateValueData.description=updateDesc;
-        setSigleTodo(updateValueData)
+        setSigleTodo(updateValueData);
     };
-    const handleUpdateSubmit = e =>{
-        e.preventDefault();
-    }
+   
     const handleUpdateDate = e =>{
         const updateDate = e.target.value;
+        const updateValueData = {...singleTodo}
+        updateValueData.date=updateDate;
+        setSigleTodo(updateValueData);
+    }
+    const handleUpdateSubmit = e =>{
+        e.preventDefault();
     }
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
@@ -48,7 +52,7 @@ const UpdateTodo = () => {
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Created Date</Form.Label>
-    <Form.Control name="date" value={singleTodo.date} onChange={handleUpdateTitle}  type="date" />
+    <Form.Control name="date" value={singleTodo.date} onChange={handleUpdateDate}  type="date" />
     </Form.Group>
    <Button variant="primary" type="submit">
     Submit
