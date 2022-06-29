@@ -5,6 +5,9 @@ import { useParams } from 'react-router-dom';
 const UpdateTodo = () => {
     const[singleTodo,setSigleTodo] = useState({})
     const {id} = useParams();
+    const handleUpadateTitle = e =>{
+        
+    }
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
         .then(res=>res.json())
