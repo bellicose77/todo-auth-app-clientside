@@ -10,7 +10,7 @@ const UpdateTodo = () => {
         console.log(updateTitle);
     }
     const handleUpadateDesc = e =>{
-        
+        const updateDesc = e.target.value;
     }
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
