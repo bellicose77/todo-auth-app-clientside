@@ -6,7 +6,8 @@ const UpdateTodo = () => {
     const[singleTodo,setSigleTodo] = useState({})
     const {id} = useParams();
     const handleUpadateTitle = e =>{
-        
+        const updateTitle = e.target.value;
+        console.log(updateTitle);
     }
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
