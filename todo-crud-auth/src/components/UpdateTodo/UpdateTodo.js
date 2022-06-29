@@ -5,11 +5,11 @@ import { useParams } from 'react-router-dom';
 const UpdateTodo = () => {
     const[singleTodo,setSigleTodo] = useState({})
     const {id} = useParams();
-    const handleUpadateTitle = e =>{
+    const handleUpdateTitle = e =>{
         const updateTitle = e.target.value;
         console.log(updateTitle);
     }
-    const handleUpadateDesc = e =>{
+    const handleUpdateTitle = e =>{
         const updateDesc = e.target.value;
     }
     const handleUpdateDate = e =>{
