@@ -22,8 +22,8 @@ const UpdateTodo = () => {
     },[]);
     return (
         <div>
-            <h2>Update your todo:{id}</h2>
-    <Form>
+    <h2>Update your todo:{id}</h2>
+    <Form onSubmit={handleUpdateSubmit}>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Title</Form.Label>
     <Form.Control name="title" value={singleTodo.title} onChange={handleUpdateTitle} className="mb-3" type="text"  />
