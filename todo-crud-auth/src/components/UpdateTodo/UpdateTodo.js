@@ -13,7 +13,7 @@ const UpdateTodo = () => {
         const updateDesc = e.target.value;
     }
     const handleUpdateDate = e =>{
-        
+        const updateDate = e.target.value;
     }
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
