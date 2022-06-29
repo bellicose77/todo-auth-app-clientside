@@ -11,14 +11,17 @@ const UpdateTodo = () => {
     const {id} = useParams();
     const handleUpdateTitle = e =>{
         const updateTitle = e.target.value;
-        const updateValueData = {...setSigleTodo}
+        const updateValueData = {...singleTodo}
         updateValueData.title = updateTitle;
         setSigleTodo(updateValueData);
         //updateValueData
-        console.log(singleTodo);
+        //console.log(singleTodo);
     }
     const handleUpdateDesc = e =>{
         const updateDesc = e.target.value;
+        const updateValueData = {...singleTodo}
+        updateValueData.description=updateDesc;
+        setSigleTodo(updateValueData)
     };
     const handleUpdateSubmit = e =>{
         e.preventDefault();
