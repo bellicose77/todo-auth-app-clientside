@@ -40,7 +40,9 @@ const UpdateTodo = () => {
             date:singleTodo.date
 
         }
-        fetch(``)
+        fetch(`http://localhost:5000/tasks/${id}`,{
+            
+        })
         //console.log(updatedata);
     }
     useEffect(()=>{
