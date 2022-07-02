@@ -36,6 +36,8 @@ const UpdateTodo = () => {
         console.log("update button work");
         const updatedata ={
             title:singleTodo.title,
+            description:singleTodo.description,
+            
         }
     }
     useEffect(()=>{
