@@ -33,7 +33,10 @@ const UpdateTodo = () => {
     console.log(singleTodo)
     const handleUpdateSubmit = e =>{
         e.preventDefault();
-        console.log("update button work")
+        console.log("update button work");
+        const updatedata ={
+            
+        }
     }
     useEffect(()=>{
         fetch(`http://localhost:5000/tasks/${id}`)
