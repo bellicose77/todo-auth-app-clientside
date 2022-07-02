@@ -47,6 +47,8 @@ const UpdateTodo = () => {
             },
             body: JSON.stringify(updatedata)
         })
+        .then(res=>res.json())
+        .then(data=>console.log(data));
         //console.log(updatedata);
     }
     useEffect(()=>{
