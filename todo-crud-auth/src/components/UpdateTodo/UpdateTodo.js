@@ -35,7 +35,7 @@ const UpdateTodo = () => {
         e.preventDefault();
         console.log("update button work");
         const updatedata ={
-            
+            title:singleTodo.title,
         }
     }
     useEffect(()=>{
