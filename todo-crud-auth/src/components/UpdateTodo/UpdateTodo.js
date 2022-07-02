@@ -41,7 +41,10 @@ const UpdateTodo = () => {
 
         }
         fetch(`http://localhost:5000/tasks/${id}`,{
-            
+            method:"PUT",
+            headers:{
+                "Content-Type":"application/json"
+            }
         })
         //console.log(updatedata);
     }
