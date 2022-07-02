@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const UpdateTodo = () => {
     const[singleTodo,setSigleTodo] = useState({
         title:'',
         description:'',
         date:''
-})
+});
+const navigate = useNavigate();
     const {id} = useParams();
     const handleUpdateTitle = e =>{
         const updateTitle = e.target.value;
@@ -48,11 +49,9 @@ const UpdateTodo = () => {
             body: JSON.stringify(updatedata)
         })
         .then(res=>res.json())
-        .then(data=>{
-            if(data.modifiedCount){
-                na
-            }
-        });
+
+        navigate('../show');
+        
         //console.log(updatedata);
     }
     useEffect(()=>{
