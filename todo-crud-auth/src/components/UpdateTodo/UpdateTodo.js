@@ -37,7 +37,8 @@ const UpdateTodo = () => {
         const updatedata ={
             title:singleTodo.title,
             description:singleTodo.description,
-            
+            date:singleTodo.date
+
         }
     }
     useEffect(()=>{
