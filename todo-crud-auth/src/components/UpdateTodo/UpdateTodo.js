@@ -44,7 +44,8 @@ const UpdateTodo = () => {
             method:"PUT",
             headers:{
                 "Content-Type":"application/json"
-            }
+            },
+            body: JSON.stringify(updatedata)
         })
         //console.log(updatedata);
     }
