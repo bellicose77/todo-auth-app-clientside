@@ -48,7 +48,11 @@ const UpdateTodo = () => {
             body: JSON.stringify(updatedata)
         })
         .then(res=>res.json())
-        .then(data=>console.log(data));
+        .then(data=>{
+            if(data.modifiedCount){
+                na
+            }
+        });
         //console.log(updatedata);
     }
     useEffect(()=>{
