@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 
 const UserLogin = () => {
     return (
-        <div>
+        <div >
             <h2>Login Here</h2>
 
         <Button variant='success'>Sign IN with google</Button>
