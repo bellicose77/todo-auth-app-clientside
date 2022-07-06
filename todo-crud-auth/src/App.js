@@ -7,6 +7,9 @@ import Nabigation from './components/Nabigation/Nabigation';
 import ShowTask from './components/ShowTask/ShowTask';
 import UpdateTodo from './components/UpdateTodo/UpdateTodo';
 import UserLogin from './components/UserLogin/UserLogin';
+import initilizationauthentication from './Firebase/firebase.initilize';
+
+initilizationauthentication();
 
 function App() {
   return (
