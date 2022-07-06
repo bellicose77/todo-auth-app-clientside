@@ -6,7 +6,7 @@ const UserLogin = () => {
         <div >
             <h2>Login Here</h2>
 
-        <Button variant='success'>Sign IN with google</Button>
+        <Button onClick={handleSignIn} variant='success'>Sign IN with google</Button>
         </div>
     );
 };
