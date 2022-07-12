@@ -22,7 +22,7 @@ const Nabigation = () => {
           </Nav>
           <Nav>
             {
-              user.email && <button>LogOUt</button>
+              user.email && <button variant="success">LogOUt</button>
             }
             <Nav.Link as ={Link} to="/login">Login</Nav.Link>
           </Nav>
