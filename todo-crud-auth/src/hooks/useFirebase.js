@@ -1,5 +1,5 @@
 import initilizationauthentication from "../Firebase/firebase.initilize";
-import { GoogleAuthProvider,getAuth } from "firebase/auth";
+import { GoogleAuthProvider,getAuth, signInWithPopup } from "firebase/auth";
 
 initilizationauthentication();
 const useFirebase = () =>{
@@ -7,7 +7,7 @@ const useFirebase = () =>{
       const auth = getAuth();
 
       const signInGoogle = () =>{
-        
+           signInWithPopup(auth,googleProvider)
       }
 }
 
