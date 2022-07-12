@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
 
 const Nabigation = () => {
-  const {user} = useFirebase()
+  const {user,logOut} = useFirebase()
     return (
         <div>
       
@@ -22,7 +22,7 @@ const Nabigation = () => {
           </Nav>
           <Nav>
             {
-              user.email && <button variant="success">LogOUt</button>
+              user.email && <button onClick={logOut} variant="success">LogOUt</button>
             }
             <Nav.Link as ={Link} to="/login">Login</Nav.Link>
           </Nav>
