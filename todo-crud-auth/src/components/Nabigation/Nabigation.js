@@ -2,6 +2,7 @@ import React from 'react';
 import {Navbar,Container, Nav, NavDropdown} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
+import './Nabigation.css';
 
 const Nabigation = () => {
   const {user,logOut} = useFirebase()
@@ -21,6 +22,7 @@ const Nabigation = () => {
            
           </Nav>
           <Nav>
+            <span className='ps'>{user.displayName}</span>
             {
               user.email && <button onClick={logOut} variant="success">LogOUt</button>
             }
