@@ -5,6 +5,10 @@ initilizationauthentication();
 const useFirebase = () =>{
       const googleProvider = new GoogleAuthProvider();
       const auth = getAuth();
+
+      const signInGoogle = () =>{
+        
+      }
 }
 
 export default useFirebase;
