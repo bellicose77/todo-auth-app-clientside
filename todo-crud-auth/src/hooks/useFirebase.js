@@ -15,6 +15,9 @@ const useFirebase = () =>{
             setUser(result.user)}
             )
       }
+      return {
+        signInByGoogle,user
+      }
 }
 
 export default useFirebase;
