@@ -1,9 +1,10 @@
 import initilizationauthentication from "../Firebase/firebase.initilize";
-import { GoogleAuthProvider } from "firebase/auth";
+import { GoogleAuthProvider,getAuth } from "firebase/auth";
 
 initilizationauthentication();
 const useFirebase = () =>{
-         const googleProvider = new GoogleAuthProvider()
+      const googleProvider = new GoogleAuthProvider();
+      const auth = getAuth();
 }
 
 export default useFirebase;
