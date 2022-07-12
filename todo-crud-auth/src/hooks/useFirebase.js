@@ -15,7 +15,7 @@ const useFirebase = () =>{
             setUser(result.user)}
             )
       }
-      const logout = () =>{
+      const logOut = () =>{
         signOut(auth)
         .then(()=>{
             setUser('')
@@ -33,7 +33,7 @@ const useFirebase = () =>{
         })
       },[])
       return {
-        signInByGoogle,user,signOut
+        signInByGoogle,user,logOut
       }
 }
 
