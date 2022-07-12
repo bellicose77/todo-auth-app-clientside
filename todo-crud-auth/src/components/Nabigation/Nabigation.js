@@ -1,8 +1,10 @@
 import React from 'react';
 import {Navbar,Container, Nav, NavDropdown} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 
 const Nabigation = () => {
+  const {user} = useFirebase()
     return (
         <div>
       
