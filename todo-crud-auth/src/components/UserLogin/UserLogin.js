@@ -7,7 +7,7 @@ const UserLogin = () => {
     const {signInByGoogle,user} = useFirebase()
     return (
         <div >
-            <h2>Login Here</h2>
+            <h2>Login Here:{user.displayName}</h2>
 
         <Button onClick={signInByGoogle} variant='success'>Sign IN with google</Button>
         </div>
