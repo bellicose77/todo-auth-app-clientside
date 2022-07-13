@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+
 
 
 const UserLogin = () => {
-    const {signInByGoogle,user} = useFirebase()
+    const {signInByGoogle,user} = useAuth()
     return (
         <div >
             <h2>Login Here:{user.displayName}</h2>

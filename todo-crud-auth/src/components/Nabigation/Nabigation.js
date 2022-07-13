@@ -1,11 +1,12 @@
 import React from 'react';
 import {Navbar,Container, Nav, NavDropdown} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 import './Nabigation.css';
 
 const Nabigation = () => {
-  const {user,logOut} = useFirebase()
+  const {user,logOut} = useAuth()
     return (
         <div>
       
