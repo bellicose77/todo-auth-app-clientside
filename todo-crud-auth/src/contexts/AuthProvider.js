@@ -1,10 +1,10 @@
 import React, { createContext } from 'react';
 
-const AuthProvider = () => {
+const AuthProvider = ({children}) => {
     const AuthContext = createContext();
     return (
         <AuthContext.Provider value ="kisu na">
-            
+            {children}
         </AuthContext.Provider>
     );
 };
