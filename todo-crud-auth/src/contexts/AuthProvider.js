@@ -3,9 +3,9 @@ import React, { createContext } from 'react';
 const AuthProvider = () => {
     const AuthContext = createContext();
     return (
-        <div>
+        <AuthContext.Provider value ="kisu na">
             
-        </div>
+        </AuthContext.Provider>
     );
 };
 
