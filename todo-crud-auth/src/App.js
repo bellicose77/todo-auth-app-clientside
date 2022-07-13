@@ -7,6 +7,7 @@ import Nabigation from './components/Nabigation/Nabigation';
 import ShowTask from './components/ShowTask/ShowTask';
 import UpdateTodo from './components/UpdateTodo/UpdateTodo';
 import UserLogin from './components/UserLogin/UserLogin';
+import AuthProvider from './contexts/AuthProvider';
 import initilizationauthentication from './Firebase/firebase.initilize';
 
 initilizationauthentication();
@@ -14,8 +15,8 @@ initilizationauthentication();
 function App() {
   return (
     <div className="App">
-     
-      <Nabigation/>
+     <AuthProvider>
+     <Nabigation/>
       <Routes>
         <Route path="/home" element={<Home/>}/>
         <Route path="/tasks" element={<AddTask/>}/>
@@ -23,6 +24,8 @@ function App() {
         <Route path="/login" element={<UserLogin/>}/>
         <Route path="/update/:id" element={<UpdateTodo/>}/>
       </Routes>
+     </AuthProvider>
+      
      
      
     </div>
