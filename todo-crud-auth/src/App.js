@@ -4,6 +4,7 @@ import './App.css';
 import AddTask from './components/AddTask/AddTask';
 import Home from './components/Home/Home';
 import Nabigation from './components/Nabigation/Nabigation';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import ShowTask from './components/ShowTask/ShowTask';
 import UpdateTodo from './components/UpdateTodo/UpdateTodo';
 import UserLogin from './components/UserLogin/UserLogin';
@@ -19,7 +20,10 @@ function App() {
      <Nabigation/>
       <Routes>
         <Route path="/home" element={<Home/>}/>
-        <Route path="/tasks" element={<AddTask/>}/>
+        <Route path="/tasks" element={
+          <PrivateRoute> <AddTask/></PrivateRoute>
+       }
+        />
         <Route path="/show" element={<ShowTask/>}/>
         <Route path="/login" element={<UserLogin/>}/>
         <Route path="/update/:id" element={<UpdateTodo/>}/>
